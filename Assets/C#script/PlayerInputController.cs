@@ -6,10 +6,13 @@ using UnityEngine.InputSystem;
 public class PlayerInputController : TopDownCharacterController
 {
     private Camera _camera;
+    public RuntimeAnimatorController[] animCon; //애니메이터 컨트롤러 저장할 배열변수 
     private void Awake()
     {
         _camera = Camera.main;
     }
+
+ 
 
     public void OnMove(InputValue value)
     {
